@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+
+  cloud-weather-postgres:
+    image: postgres:14-alpine
+    user: postgres
+    environment:
+      - POSTGRES_DATABASE:cloud_weather_precipitation_dev
+      - POSTGRES_USER:postgres
+      - POSTGRES_PASSWORD:password
+    ports:
+    - 5432:5432
+    volumes:
+    - postgres-data:/data/db
+
+volumes:
+  postgres-data:
