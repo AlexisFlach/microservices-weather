@@ -14,6 +14,9 @@
     <None Remove="Microsoft.Extensions.Options" />
     <None Remove="Microsoft.Extensions.Logging" />
     <None Remove="Report\" />
+    <None Remove="BusinessLogic\" />
+    <None Remove="Config\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
@@ -32,5 +35,8 @@
 
   <ItemGroup>
     <Folder Include="DataAccess\" />
+    <Folder Include="BusinessLogic\" />
+    <Folder Include="Config\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>
